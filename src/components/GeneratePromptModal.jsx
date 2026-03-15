@@ -5,8 +5,8 @@ import { useAuth } from '../context/AuthContext';
 import { motion, AnimatePresence } from 'framer-motion';
 import toast from 'react-hot-toast';
 
-export default function GeneratePromptModal({ isOpen, onClose, onAddPrompt, triggerAuth }) {
-  const { user, credits, deductCredit } = useAuth();
+export default function GeneratePromptModal({ isOpen, onClose, onAddPrompt }) {
+  const { credits, deductCredit } = useAuth();
   const [apiKey] = useState(import.meta.env.VITE_GEMINI_API_KEY || '');
   const [topic, setTopic] = useState('');
   const [loading, setLoading] = useState(false);

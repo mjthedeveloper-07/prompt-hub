@@ -31,7 +31,6 @@ export default function BioStar() {
     const toastId = toast.loading('Brewing viral bios...');
 
     try {
-      const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
       const model = genAI.getGenerativeModel({ model: "gemini-flash-latest" });
       const prompt = `Generate 5 viral, creative, and professional Instagram bios based on this personality/description: "${text}". 
       Each bio should:

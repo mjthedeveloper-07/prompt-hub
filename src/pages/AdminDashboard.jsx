@@ -19,7 +19,7 @@ import {
 import toast from 'react-hot-toast';
 
 export default function AdminDashboard() {
-  const { user, isAdmin } = useAuth();
+  const { isAdmin } = useAuth();
   const [profiles, setProfiles] = useState([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');

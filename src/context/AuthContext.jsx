@@ -1,8 +1,9 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useCallback, useEffect, useState } from "react";
 import { supabase } from "../lib/supabase";
 
 const AuthContext = createContext();
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useAuth = () => useContext(AuthContext);
 
 const ADMIN_EMAILS = ['jagathratchagan2023@gmail.com'];
@@ -32,41 +33,7 @@ export const AuthProvider = ({ children }) => {
     return parseInt(stored);
   };
 
-  useEffect(() => {
-    // 1. Initial Session Check
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      const currentUser = session?.user ?? null;
-      setUser(currentUser);
-      setIsAdmin(currentUser ? ADMIN_EMAILS.includes(currentUser.email) : false);
-      setIsPro(currentUser ? PRO_EMAILS.includes(currentUser.email) : false);
-      
-      if (currentUser) {
-        fetchCredits(currentUser.id);
-      } else {
-        setCredits(getGuestCredits());
-      }
-      setLoading(false);
-    });
-
-    // 2. Auth state listener
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
-      const currentUser = session?.user ?? null;
-      setUser(currentUser);
-      setIsAdmin(currentUser ? ADMIN_EMAILS.includes(currentUser.email) : false);
-      setIsPro(currentUser ? PRO_EMAILS.includes(currentUser.email) : false);
-      
-      if (currentUser) {
-        await fetchCredits(currentUser.id);
-      } else {
-        setCredits(getGuestCredits());
-      }
-      setLoading(false);
-    });
-
-    return () => subscription.unsubscribe();
-  }, []);
-
-  const fetchCredits = async (userId) => {
+  const fetchCredits = useCallback(async (userId) => {
     const { data, error } = await supabase
       .from('profiles')
       .select('credits, last_reset_at')
@@ -118,7 +85,41 @@ export const AuthProvider = ({ children }) => {
       .subscribe();
 
     return () => supabase.removeChannel(channel);
-  };
+  }, [user]);
+
+  useEffect(() => {
+    // 1. Initial Session Check
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      const currentUser = session?.user ?? null;
+      setUser(currentUser);
+      setIsAdmin(currentUser ? ADMIN_EMAILS.includes(currentUser.email) : false);
+      setIsPro(currentUser ? PRO_EMAILS.includes(currentUser.email) : false);
+      
+      if (currentUser) {
+        fetchCredits(currentUser.id);
+      } else {
+        setCredits(getGuestCredits());
+      }
+      setLoading(false);
+    });
+
+    // 2. Auth state listener
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
+      const currentUser = session?.user ?? null;
+      setUser(currentUser);
+      setIsAdmin(currentUser ? ADMIN_EMAILS.includes(currentUser.email) : false);
+      setIsPro(currentUser ? PRO_EMAILS.includes(currentUser.email) : false);
+      
+      if (currentUser) {
+        await fetchCredits(currentUser.id);
+      } else {
+        setCredits(getGuestCredits());
+      }
+      setLoading(false);
+    });
+
+    return () => subscription.unsubscribe();
+  }, [fetchCredits]);
 
   const signup = (email, password) => supabase.auth.signUp({ email, password });
   const login = (email, password) => supabase.auth.signInWithPassword({ email, password });

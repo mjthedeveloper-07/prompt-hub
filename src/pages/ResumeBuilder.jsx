@@ -9,7 +9,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
 
 export default function ResumeBuilder() {
-  const { user, credits, deductCredit, isAdmin } = useAuth();
+  const { credits, deductCredit, isAdmin } = useAuth();
   const [step, setStep] = useState(1);
   const [copied, setCopied] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -52,9 +52,7 @@ ${formData.skills || 'Enter your skills to see them formatted here.'}
     setLoading(true);
     const toastId = toast.loading('AI is optimizing your resume...');
 
-    try {
-      const model = genAI.getGenerativeModel({ model: "gemini-flash-latest" });
-      const prompt = `Optimize the following resume details for ATS (Applicant Tracking Systems) and professional impact. 
+    const prompt = `Optimize the following resume details for ATS (Applicant Tracking Systems) and professional impact. 
       Target Role: ${formData.role}
       Experience: ${formData.experience}
       Skills: ${formData.skills}
@@ -72,6 +70,9 @@ ${formData.skills || 'Enter your skills to see them formatted here.'}
       
       ## Professional Experience
       [Formatted experience with action verbs]`;
+
+    try {
+      const model = genAI.getGenerativeModel({ model: "gemini-flash-latest" });
 
       const result = await model.generateContent(prompt);
       const text = result.response.text();

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Routes, Route, useParams, useNavigate, Navigate } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import PromptCard from './components/PromptCard';
@@ -14,6 +14,7 @@ import AuthPage from './pages/AuthPage';
 import BioStar from './pages/BioStar';
 import AdminDashboard from './pages/AdminDashboard';
 import AuthModal from './components/AuthModal';
+import GeneratePromptModal from './components/GeneratePromptModal';
 import { useAuth } from './context/AuthContext';
 
 function AdminRoute({ children }) {
@@ -151,7 +152,7 @@ function CategoryPage({ promptsData, generatedPrompts, setIsModalOpen }) {
   );
 }
 
-function SidebarRouterWrapper({ categoriesWithCounts, setIsModalOpen, setIsAuthModalOpen, isSidebarOpen, setIsSidebarOpen }) {
+function SidebarRouterWrapper({ categoriesWithCounts, setIsModalOpen, isSidebarOpen, setIsSidebarOpen }) {
   const path = window.location.pathname;
   let activeCategory = null;
   
@@ -173,7 +174,6 @@ function SidebarRouterWrapper({ categoriesWithCounts, setIsModalOpen, setIsAuthM
       categories={categoriesWithCounts} 
       activeCategory={activeCategory} 
       setIsModalOpen={setIsModalOpen}
-      setIsAuthModalOpen={setIsAuthModalOpen}
       isOpen={isSidebarOpen}
       onClose={() => setIsSidebarOpen(false)}
     />
@@ -188,7 +188,6 @@ export default function App() {
   const [generatedPrompts, setGeneratedPrompts] = useState([]);
   
   const navigate = useNavigate();
-  const { user } = useAuth();
 
   const categoriesWithCounts = CATEGORY_UI.map(cat => ({
     ...cat,
@@ -252,7 +251,6 @@ export default function App() {
               <SidebarRouterWrapper 
                  categoriesWithCounts={categoriesWithCounts}
                  setIsModalOpen={setIsModalOpen}
-                 setIsAuthModalOpen={setIsAuthModalOpen}
                  isSidebarOpen={isSidebarOpen}
                  setIsSidebarOpen={setIsSidebarOpen}
               />
@@ -285,7 +283,6 @@ export default function App() {
               isOpen={isModalOpen} 
               onClose={() => setIsModalOpen(false)} 
               onAddPrompt={handleAddGeneratedPrompt}
-              triggerAuth={() => setIsAuthModalOpen(true)}
             />
 
             <AuthModal 

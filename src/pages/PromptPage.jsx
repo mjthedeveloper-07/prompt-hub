@@ -22,6 +22,12 @@ export default function PromptPage({ promptsData }) {
     }
   }
 
+  const relatedPrompts = categoryId
+    ? (promptsData[categoryId]
+        ?.filter(p => p.slug !== slug)
+        .slice(0, 3) || [])
+    : [];
+
   if (!promptObj) return <Navigate to="/" replace />;
 
   const copyToClipboard = () => {
@@ -30,11 +36,6 @@ export default function PromptPage({ promptsData }) {
     toast.success('Template copied to clipboard!');
     setTimeout(() => setCopied(false), 2000);
   };
-
-  const relatedPrompts = promptsData[categoryId]
-    ?.filter(p => p.slug !== slug)
-    .sort(() => 0.5 - Math.random())
-    .slice(0, 3) || [];
 
   const schema = {
     "@context": "https://schema.org",

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useLocation, useNavigate, Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { X, Mail, Lock, User, LogIn, ChevronRight, Loader2, Sparkles, ArrowLeft } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -7,7 +7,6 @@ import toast from 'react-hot-toast';
 import SEO from '../components/SEO';
 
 export default function AuthPage() {
-  const location = useLocation();
   const navigate = useNavigate();
   const { user, login, signup, googleSignIn } = useAuth();
   
