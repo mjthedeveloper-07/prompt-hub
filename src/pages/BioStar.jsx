@@ -31,7 +31,8 @@ export default function BioStar() {
     const toastId = toast.loading('Brewing viral bios...');
 
     try {
-      const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+      const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
+      const model = genAI.getGenerativeModel({ model: "gemini-flash-latest" });
       const prompt = `Generate 5 viral, creative, and professional Instagram bios based on this personality/description: "${text}". 
       Each bio should:
       1. Be under 150 characters.
@@ -46,7 +47,7 @@ export default function BioStar() {
         result = await model.generateContent(prompt);
       } catch (innerErr) {
         if (innerErr.message?.includes('404')) {
-           const backupModel = genAI.getGenerativeModel({ model: "gemini-pro" });
+           const backupModel = genAI.getGenerativeModel({ model: "gemini-pro-latest" });
            result = await backupModel.generateContent(prompt);
         } else {
           throw innerErr;

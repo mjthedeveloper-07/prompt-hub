@@ -31,7 +31,7 @@ export default function GeneratePromptModal({ isOpen, onClose, onAddPrompt, trig
 
     try {
       const genAI = new GoogleGenerativeAI(apiKey);
-      const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+      const model = genAI.getGenerativeModel({ model: "gemini-flash-latest" });
 
       const systemInstruction = `You are a prompt engineering expert. The user will provide a topic or category. Generate EXACTLY ONE high-quality AI prompt based on their topic.
 The prompt must be structured as JSON matching exactly this format:
@@ -47,7 +47,7 @@ Do not return markdown formatting blocks (\`\`\`json), return ONLY the raw JSON 
         result = await model.generateContent(`${systemInstruction}\n\nUser Topic: ${topic}`);
       } catch (innerErr) {
         if (innerErr.message?.includes('404')) {
-           const backupModel = genAI.getGenerativeModel({ model: "gemini-pro" });
+           const backupModel = genAI.getGenerativeModel({ model: "gemini-pro-latest" });
            result = await backupModel.generateContent(`${systemInstruction}\n\nUser Topic: ${topic}`);
         } else {
           throw innerErr;

@@ -53,7 +53,7 @@ ${formData.skills || 'Enter your skills to see them formatted here.'}
     const toastId = toast.loading('AI is optimizing your resume...');
 
     try {
-      const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+      const model = genAI.getGenerativeModel({ model: "gemini-flash-latest" });
       const prompt = `Optimize the following resume details for ATS (Applicant Tracking Systems) and professional impact. 
       Target Role: ${formData.role}
       Experience: ${formData.experience}
@@ -92,7 +92,7 @@ ${formData.skills || 'Enter your skills to see them formatted here.'}
       // Fallback model if flash fails
       if (error.message?.includes('404')) {
         try {
-           const backupModel = genAI.getGenerativeModel({ model: "gemini-pro" });
+           const backupModel = genAI.getGenerativeModel({ model: "gemini-pro-latest" });
            const result = await backupModel.generateContent(prompt);
            setOptimizedResume(result.response.text());
            setStep(3);
