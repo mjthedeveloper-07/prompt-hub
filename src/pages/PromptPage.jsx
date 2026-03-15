@@ -4,6 +4,7 @@ import SEO from '../components/SEO';
 import { Copy, Check, Tags, ArrowLeft, Sparkles, Share2, Bookmark } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import toast from 'react-hot-toast';
+import AdBanner from '../components/AdBanner';
 
 export default function PromptPage({ promptsData }) {
   const { slug } = useParams();
@@ -148,12 +149,13 @@ export default function PromptPage({ promptsData }) {
            </div>
         </div>
 
+        <AdBanner slot="prompt_details_bottom" className="mb-20" />
+
         {/* Related Section Pro Max */}
         {relatedPrompts.length > 0 && (
           <section className="mt-32">
             <div className="flex items-center justify-between mb-10">
                <h3 className="text-3xl font-black tracking-tighter">Extend your flow</h3>
-               <div className="h-px bg-white/10 flex-1 mx-8 hidden sm:block" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {relatedPrompts.map(p => (

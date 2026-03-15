@@ -1,19 +1,31 @@
-import { MessageSquarePlus, Library, Sparkles, Home, FileText, User, LogOut, CreditCard, Instagram, ShieldCheck, ChevronRight } from 'lucide-react';
+import { MessageSquarePlus, Library, Sparkles, Home, FileText, User, LogOut, CreditCard, Instagram, ShieldCheck, ChevronRight, X } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { motion } from 'framer-motion';
 
-export default function Sidebar({ categories, activeCategory, setIsModalOpen, setIsAuthModalOpen }) {
+export default function Sidebar({ categories, activeCategory, setIsModalOpen, setIsAuthModalOpen, isOpen, onClose }) {
   const { user, credits, logout, isAdmin, isPro, isGuest } = useAuth();
   const navigate = useNavigate();
 
   return (
-    <aside className="w-64 h-screen fixed left-0 top-0 glass border-r border-border flex flex-col z-10 overflow-y-auto">
-      <div className="p-6 flex flex-col h-full">
-        <Link to="/" className="flex items-center gap-2 text-2xl font-black tracking-tight mb-8 bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent hover:opacity-90">
-          <Library className="text-primary" />
-          Prompt<span className="text-text-main">Hub</span>
-        </Link>
+    <>
+      {/* Mobile Overlay */}
+      <div 
+        className={`fixed inset-0 bg-black/60 backdrop-blur-sm z-40 lg:hidden transition-opacity duration-300 ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+        onClick={onClose}
+      />
+      
+      <aside className={`w-64 h-screen fixed left-0 top-0 glass border-r border-border flex flex-col z-50 overflow-y-auto transition-transform duration-300 transform lg:translate-x-0 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+        <div className="p-6 flex flex-col h-full">
+          <div className="flex items-center justify-between mb-8">
+            <Link to="/" onClick={onClose} className="flex items-center gap-2 text-2xl font-black tracking-tight bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent hover:opacity-90">
+              <Library className="text-primary" />
+              Prompt<span className="text-text-main">Hub</span>
+            </Link>
+            <button onClick={onClose} className="lg:hidden p-2 text-text-muted hover:text-white transition-colors">
+              <X size={20} />
+            </button>
+          </div>
         
         <nav className="space-y-1 mb-6 border-b border-border pb-6">
            <Link
@@ -177,6 +189,7 @@ export default function Sidebar({ categories, activeCategory, setIsModalOpen, se
           </div>
         </div>
       </div>
-    </aside>
+      </aside>
+    </>
   );
 }

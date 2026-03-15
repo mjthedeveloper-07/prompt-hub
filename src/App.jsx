@@ -2,9 +2,10 @@ import { useState, useEffect } from 'react';
 import { Routes, Route, useParams, useNavigate, Navigate } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import PromptCard from './components/PromptCard';
-import GeneratePromptModal from './components/GeneratePromptModal';
 import SEO from './components/SEO';
+import AdBanner from './components/AdBanner';
 import { Toaster } from 'react-hot-toast';
+import { Menu, X, Sparkles as SparkleIcon } from 'lucide-react';
 
 import HomePage from './pages/HomePage';
 import ResumeBuilder from './pages/ResumeBuilder';
@@ -108,6 +109,7 @@ function CategoryPage({ promptsData, generatedPrompts, setIsModalOpen }) {
       />
       
       <div className="max-w-6xl mx-auto py-8">
+        <AdBanner slot="category_top" className="mb-10" />
         <header className="mb-10">
           <h1 className="text-4xl lg:text-5xl font-black mb-4 capitalize">
             {activeCategory === 'generated' ? 'My Generated Prompts' : activeCategory.replace('_', ' ')}
@@ -149,7 +151,7 @@ function CategoryPage({ promptsData, generatedPrompts, setIsModalOpen }) {
   );
 }
 
-function SidebarRouterWrapper({ categoriesWithCounts, setIsModalOpen, setIsAuthModalOpen }) {
+function SidebarRouterWrapper({ categoriesWithCounts, setIsModalOpen, setIsAuthModalOpen, isSidebarOpen, setIsSidebarOpen }) {
   const path = window.location.pathname;
   let activeCategory = null;
   
@@ -172,6 +174,8 @@ function SidebarRouterWrapper({ categoriesWithCounts, setIsModalOpen, setIsAuthM
       activeCategory={activeCategory} 
       setIsModalOpen={setIsModalOpen}
       setIsAuthModalOpen={setIsAuthModalOpen}
+      isOpen={isSidebarOpen}
+      onClose={() => setIsSidebarOpen(false)}
     />
   );
 }
@@ -180,6 +184,7 @@ export default function App() {
   const [promptsData] = useState(defaultData);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [generatedPrompts, setGeneratedPrompts] = useState([]);
   
   const navigate = useNavigate();
@@ -229,17 +234,32 @@ export default function App() {
             <div className="fixed bottom-[-10%] right-[-5%] w-[50%] h-[50%] bg-accent/5 blur-[120px] rounded-full pointer-events-none" />
             <div className="fixed top-[20%] right-[10%] w-[30%] h-[30%] bg-purple-600/5 blur-[100px] rounded-full pointer-events-none" />
 
-            {/* Sidebar - Fixed */}
-            <div className="w-64 shrink-0">
+            {/* Mobile Header */}
+            <header className="lg:hidden fixed top-0 left-0 right-0 h-16 glass border-b border-border z-40 flex items-center justify-between px-6">
+              <div className="flex items-center gap-2 text-xl font-black bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent">
+                PromptHub
+              </div>
+              <button 
+                onClick={() => setIsSidebarOpen(true)}
+                className="p-2 text-text-muted hover:text-white"
+              >
+                <Menu size={24} />
+              </button>
+            </header>
+
+            {/* Sidebar Wrapper */}
+            <div className="lg:w-64 shrink-0 transition-all">
               <SidebarRouterWrapper 
                  categoriesWithCounts={categoriesWithCounts}
                  setIsModalOpen={setIsModalOpen}
                  setIsAuthModalOpen={setIsAuthModalOpen}
+                 isSidebarOpen={isSidebarOpen}
+                 setIsSidebarOpen={setIsSidebarOpen}
               />
             </div>
 
             {/* Main Content Area */}
-            <main className="flex-1 overflow-y-auto h-screen p-8 lg:p-12 z-0 relative">
+            <main className="flex-1 overflow-y-auto h-screen p-6 lg:p-12 pt-24 lg:pt-12 z-0 relative">
               <Routes>
                 <Route path="/" element={<HomePage categories={categoriesWithCounts} />} />
                 <Route path="/resume-builder" element={<ResumeBuilder />} />

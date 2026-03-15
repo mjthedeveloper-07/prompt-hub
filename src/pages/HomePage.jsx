@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import { ArrowRight, FileText, Search, Zap, Sparkles, TrendingUp, ShieldCheck, Cpu, ChevronRight } from 'lucide-react';
 import { motion } from 'framer-motion';
+import AdBanner from '../components/AdBanner';
 
 export default function HomePage({ categories }) {
   const schemaOrg = {
@@ -112,6 +113,8 @@ export default function HomePage({ categories }) {
             })}
           </div>
         </section>
+
+        <AdBanner slot="home_footer_top" className="mb-24" />
 
         {/* --- CTA SECTION --- */}
         <motion.section variants={itemVariants} className="glass p-16 rounded-[3rem] border border-primary/20 bg-gradient-to-r from-primary/10 via-transparent to-accent/10 text-center relative overflow-hidden">
