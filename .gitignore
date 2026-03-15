@@ -27,3 +27,10 @@ dist-ssr
 .env
 .env.local
 .env.*.local
+
+# Local History
+.history
+.venv
+env/
+venv/
+ENV/
