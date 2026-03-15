@@ -1,10 +1,9 @@
 import { MessageSquarePlus, Library, Sparkles, Home, FileText, User, LogOut, CreditCard, Instagram, ShieldCheck, ChevronRight, X } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { motion } from 'framer-motion';
 
-export default function Sidebar({ categories, activeCategory, setIsModalOpen, setIsAuthModalOpen, isOpen, onClose }) {
-  const { user, credits, logout, isAdmin, isPro, isGuest } = useAuth();
+export default function Sidebar({ categories, activeCategory, setIsModalOpen, isOpen, onClose }) {
+  const { user, credits, logout, isAdmin, isPro } = useAuth();
   const navigate = useNavigate();
 
   return (

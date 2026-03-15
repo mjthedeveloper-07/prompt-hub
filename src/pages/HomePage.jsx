@@ -94,7 +94,7 @@ export default function HomePage({ categories }) {
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {categories.slice(0, 8).map((cat, idx) => {
+            {categories.slice(0, 8).map((cat) => {
               if (cat.id === 'generated') return null;
               return (
                 <motion.div key={cat.id} variants={itemVariants}>
