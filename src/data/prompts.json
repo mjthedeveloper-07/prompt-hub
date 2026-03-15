@@ -1,0 +1,614 @@
+{
+  "business": [
+    {
+      "title": "Craft Investor Pitch Deck",
+      "prompt": "You are a seasoned startup pitch consultant who has helped companies raise over $500M in funding. Create a compelling 10-slide investor pitch deck outline for [COMPANY NAME], a [INDUSTRY] startup offering [PRODUCT/SERVICE]. The deck must include: problem statement, solution, market size (TAM/SAM/SOM), business model, traction metrics, competitive landscape, go-to-market strategy, financials summary, team slide, and a clear ask of [FUNDING AMOUNT]. Each slide should include key talking points, suggested data visualizations, and one power sentence that investors will remember.",
+      "tags": [
+        "pitch deck",
+        "startup",
+        "fundraising"
+      ],
+      "slug": "craft-investor-pitch-deck"
+    },
+    {
+      "title": "Competitive Analysis Report",
+      "prompt": "Act as a business intelligence analyst. Conduct a thorough competitive analysis for [MY COMPANY] in the [INDUSTRY] space. Compare us against [COMPETITOR 1], [COMPETITOR 2], and [COMPETITOR 3] across these dimensions: pricing strategy, product features, target audience, marketing channels, customer reviews sentiment, and market positioning. Present findings in a structured table, then write a 200-word strategic gap analysis identifying where [MY COMPANY] can differentiate. End with 3 actionable recommendations to gain competitive advantage within 90 days.",
+      "tags": [
+        "competitive analysis",
+        "strategy",
+        "business intelligence"
+      ],
+      "slug": "competitive-analysis-report"
+    },
+    {
+      "title": "Build Pricing Strategy",
+      "prompt": "You are a pricing strategy expert with experience across SaaS, e-commerce, and service businesses. Design a comprehensive pricing strategy for [PRODUCT/SERVICE] targeting [TARGET CUSTOMER] in the [MARKET]. Include: cost-based floor price calculation, competitor benchmark pricing, perceived value assessment, and 3 pricing tier recommendations (Starter, Growth, Enterprise) with feature differentiation for each. Explain the psychological pricing tactics used, churn risk at each tier, and the projected revenue impact if [X%] of [CURRENT USER BASE] converts to the Growth tier.",
+      "tags": [
+        "pricing",
+        "monetization",
+        "saas"
+      ],
+      "slug": "build-pricing-strategy"
+    },
+    {
+      "title": "Define Business KPI Dashboard",
+      "prompt": "Act as a COO advising a [STAGE: early-stage/growth-stage/mature] [INDUSTRY] company. Design a KPI dashboard framework for the [DEPARTMENT: Sales/Marketing/Operations/Finance] team. List exactly 10 KPIs, each with: metric name, formula for calculation, target benchmark, measurement frequency, and which team member owns it. Then explain which 3 KPIs are the most critical leading indicators versus lagging indicators. Format the output as a structured markdown table followed by a written summary.",
+      "tags": [
+        "kpi",
+        "dashboard",
+        "operations"
+      ],
+      "slug": "define-business-kpi-dashboard"
+    },
+    {
+      "title": "Write Partnership Proposal",
+      "prompt": "You are a business development manager. Write a formal partnership proposal from [MY COMPANY] to [PARTNER COMPANY], proposing a [TYPE OF PARTNERSHIP: co-marketing/integration/reseller/referral] collaboration. The proposal must include: shared value proposition, specific roles and responsibilities for each party, revenue share model or mutual benefit structure, co-branded campaign idea, 90-day activation timeline, and success metrics. The tone should be professional yet compelling, and it should end with a clear call-to-action to schedule a meeting within [NUMBER] business days.",
+      "tags": [
+        "partnership",
+        "business development",
+        "proposal"
+      ],
+      "slug": "write-partnership-proposal"
+    },
+    {
+      "title": "SWOT Analysis Generator",
+      "prompt": "Act as a strategic business consultant. Perform a comprehensive SWOT analysis for [COMPANY NAME], a [BRIEF COMPANY DESCRIPTION] operating in [GEOGRAPHIC MARKET]. For each quadrant — Strengths, Weaknesses, Opportunities, Threats — provide exactly 5 bullet points with a one-sentence explanation for each. After the SWOT table, write a 150-word strategic narrative that connects the most critical strength + opportunity pairing and the most dangerous weakness + threat pairing. End with 2 prioritized strategic initiatives for the next 6 months.",
+      "tags": [
+        "swot",
+        "strategy",
+        "planning"
+      ],
+      "slug": "swot-analysis-generator"
+    },
+    {
+      "title": "Sales Script for Cold Calls",
+      "prompt": "You are an elite B2B sales trainer who specializes in outbound sales. Write a 3-minute cold call script for a sales rep at [COMPANY NAME] selling [PRODUCT/SERVICE] to [TARGET JOB TITLE] at [TARGET COMPANY TYPE]. The script must include: a pattern-interrupt opener (no 'How are you today?'), a 20-second value pitch, a qualifying question sequence (3 questions), an objection handler for '[MOST COMMON OBJECTION]', and a next-step close that books a follow-up meeting. Include stage cues in brackets like [PAUSE] or [LISTEN FOR RESPONSE].",
+      "tags": [
+        "sales",
+        "cold calling",
+        "b2b"
+      ],
+      "slug": "sales-script-for-cold-calls"
+    },
+    {
+      "title": "Launch Go-To-Market Plan",
+      "prompt": "Act as a go-to-market strategist. Create a 60-day GTM launch plan for [PRODUCT NAME], a [CATEGORY] tool targeting [IDEAL CUSTOMER PROFILE]. The plan must include: launch goal with measurable success metrics, 3-phase timeline (pre-launch, launch week, post-launch), channel strategy (organic, paid, partnerships), key messaging pillars, a launch day content calendar, influencer/press outreach list criteria, and early adopter incentive structure. Output in a structured week-by-week format with ownership roles assigned (e.g., Marketing Lead, Founder, Community Manager).",
+      "tags": [
+        "gtm",
+        "product launch",
+        "marketing strategy"
+      ],
+      "slug": "launch-go-to-market-plan"
+    },
+    {
+      "title": "Write Executive Summary",
+      "prompt": "You are a professional business writer. Write a crisp executive summary for a [DOCUMENT TYPE: business plan/investor report/project proposal] for [COMPANY/PROJECT NAME] in the [INDUSTRY]. The summary must be exactly 300 words, cover: the problem being solved, the proposed solution, target market size, business model, competitive advantage, traction achieved so far ([KEY METRIC]), and the specific ask ([FUNDING/RESOURCES/APPROVAL NEEDED]). Use active voice, avoid jargon, and write for a time-pressed C-suite executive who will decide whether to read the full document.",
+      "tags": [
+        "executive summary",
+        "business writing",
+        "planning"
+      ],
+      "slug": "write-executive-summary"
+    },
+    {
+      "title": "Negotiate Business Contract Terms",
+      "prompt": "Act as an experienced commercial negotiator and business attorney advisor. I have received a contract from [VENDOR/PARTNER NAME] for [SERVICE/PRODUCT]. Key terms I am unhappy with: [LIST 3 UNFAVORABLE TERMS]. My priorities are: [PRIORITY 1], [PRIORITY 2], [PRIORITY 3]. Draft a professional counter-proposal email that: acknowledges the relationship positively, proposes specific alternative language for each of the 3 terms, explains the business rationale for each change without being adversarial, and closes by suggesting a 30-minute call to finalize agreement.",
+      "tags": [
+        "negotiation",
+        "contract",
+        "legal"
+      ],
+      "slug": "negotiate-business-contract-terms"
+    }
+  ],
+  "productivity": [
+    {
+      "title": "Design Weekly Time-Block Plan",
+      "prompt": "Act as a productivity coach certified in time-blocking and deep work methodologies. Create a personalized weekly time-block schedule for someone working as a [JOB ROLE] with the following constraints: work hours [START TIME] to [END TIME], [NUMBER] team meetings per week averaging [MEETING DURATION] each, a top priority project '[PROJECT NAME]', and personal commitments at [TIME SLOTS]. Design a Monday-Friday schedule in 90-minute blocks, label each block as: Deep Work, Shallow Work, Admin, or Recovery. Include two 'buffer' blocks per day for overruns. Output as a formatted table with color-coding suggestions.",
+      "tags": [
+        "time blocking",
+        "scheduling",
+        "deep work"
+      ],
+      "slug": "design-weekly-time-block-plan"
+    },
+    {
+      "title": "Audit and Fix Meeting Culture",
+      "prompt": "You are an organizational effectiveness consultant. Analyze our company's current meeting habits based on this input: [DESCRIBE CURRENT MEETING TYPES, FREQUENCY, AND DURATION]. We have [NUMBER] employees and spend approximately [TOTAL MEETING HOURS] per week in meetings. Diagnose which meetings are unnecessary, which should be async (email/Loom/Slack), and which should be shortened. Provide a meeting audit framework with a 'Meeting ROI Score' system, a template for a 25-minute stand-up, a 45-minute decision meeting, and a policy for 'no-meeting Fridays'. Calculate the estimated hours saved per week after implementing your recommendations.",
+      "tags": [
+        "meetings",
+        "async work",
+        "team productivity"
+      ],
+      "slug": "audit-and-fix-meeting-culture"
+    },
+    {
+      "title": "Build Personal OKR System",
+      "prompt": "Act as an executive performance coach. Help me build a personal OKR (Objectives and Key Results) system for the next [QUARTER/YEAR]. My main life areas are: [AREA 1], [AREA 2], [AREA 3]. My overarching goal for this period is: [MAIN GOAL]. For each area, define 1 Objective (inspiring, qualitative) and 3 measurable Key Results with specific numeric targets. Then create a weekly check-in template I can use every Monday to track progress, a scoring rubric (0.0–1.0), and a monthly reflection prompt that helps me course-correct if I'm behind.",
+      "tags": [
+        "okr",
+        "goal setting",
+        "personal development"
+      ],
+      "slug": "build-personal-okr-system"
+    },
+    {
+      "title": "Eliminate Procrastination Triggers",
+      "prompt": "You are a behavioral psychologist specializing in motivation and habit change. I consistently procrastinate on [TASK TYPE OR SPECIFIC TASK]. When I try to work on it, I feel [DESCRIBE EMOTION: overwhelmed/bored/anxious/unclear]. My usual distractions are [DISTRACTION 1] and [DISTRACTION 2]. Diagnose the root procrastination trigger (ambiguity, fear of failure, low immediate reward, task aversion). Then give me a 5-step personalized anti-procrastination protocol using proven techniques such as implementation intentions, temptation bundling, and the 2-minute rule. Include a 'procrastination emergency script' I can read aloud when I catch myself avoiding the task.",
+      "tags": [
+        "procrastination",
+        "habits",
+        "focus"
+      ],
+      "slug": "eliminate-procrastination-triggers"
+    },
+    {
+      "title": "Create Daily Shutdown Ritual",
+      "prompt": "Act as a productivity systems designer. Create a 15-minute end-of-workday shutdown ritual for a [JOB ROLE] who struggles with work-life separation and frequently works past [END TIME]. The ritual must include: a 3-question daily review (accomplishments, blockers, tomorrow's top 3), an inbox-zero process for [EMAIL CLIENT], a next-day preparation step (blocking time on calendar), a physical or digital 'closing signal' to mark end of work, and a transition activity to shift into personal time. Format as a step-by-step checklist with time allocations for each step.",
+      "tags": [
+        "shutdown ritual",
+        "work-life balance",
+        "routine"
+      ],
+      "slug": "create-daily-shutdown-ritual"
+    },
+    {
+      "title": "Prioritize Tasks with Eisenhower Matrix",
+      "prompt": "You are a productivity strategist. I have the following [NUMBER] tasks on my plate for this week: [PASTE TASK LIST]. Categorize each task into the Eisenhower Matrix (Urgent+Important, Important+Not Urgent, Urgent+Not Important, Neither). For each quadrant, provide the recommended action (Do Now, Schedule, Delegate, Delete). Then identify the top 3 'MIT' (Most Important Tasks) for today, explain why they were chosen, and suggest a realistic 90-minute deep work block to complete the most cognitively demanding one. End with a 'cognitive load score' for my week out of 10.",
+      "tags": [
+        "task prioritization",
+        "eisenhower matrix",
+        "time management"
+      ],
+      "slug": "prioritize-tasks-with-eisenhower-matrix"
+    },
+    {
+      "title": "Design Habit Stacking System",
+      "prompt": "Act as a habit design coach trained in BJ Fogg's Tiny Habits and James Clear's Atomic Habits frameworks. I want to build the following new habit: [DESIRED HABIT]. My current reliable anchor habits are: morning [ANCHOR 1], afternoon [ANCHOR 2], evening [ANCHOR 3]. Design a 3-part habit stack for each anchor point that naturally leads to [DESIRED HABIT]. For each habit, define the cue, the routine, and the reward. Include a 4-week ramp-up plan starting from a 2-minute version and scaling to the full habit. Also provide a habit tracking template and a recovery plan for when I miss a day.",
+      "tags": [
+        "habits",
+        "behavior design",
+        "self-improvement"
+      ],
+      "slug": "design-habit-stacking-system"
+    },
+    {
+      "title": "Write Delegation Framework",
+      "prompt": "You are a leadership and delegation expert. I am a [JOB TITLE] managing a team of [TEAM SIZE]. I currently have [NUMBER] recurring tasks that I cannot let go of even though they could be delegated. Those tasks are: [LIST TASKS]. For each task, assess: the skill level required, estimated time cost per week, and which team member profile should own it. Then write a Delegation Decision Tree I can use for any future task, a 'delegation briefing' template with 6 required fields, and a 30-day check-in schedule to ensure quality without micromanaging. End with 3 mindset reframes that help leaders delegate with confidence.",
+      "tags": [
+        "delegation",
+        "leadership",
+        "team management"
+      ],
+      "slug": "write-delegation-framework"
+    },
+    {
+      "title": "Optimize Morning Routine",
+      "prompt": "Act as a performance optimization coach who works with high-achievers. Design a science-backed morning routine for a [JOB ROLE] who wakes up at [WAKE TIME], has [DURATION] before starting work, and struggles with [CHALLENGE: low energy/brain fog/anxiety/lack of focus]. The routine must incorporate: a cortisol-boosting physical activity, a mindfulness or journaling practice, nutritional timing recommendations, a 'daily intention' setting exercise, and a 10-minute review of top priorities. Provide the full minute-by-minute schedule and cite the behavioral science principle behind each element.",
+      "tags": [
+        "morning routine",
+        "performance",
+        "wellness"
+      ],
+      "slug": "optimize-morning-routine"
+    },
+    {
+      "title": "Automate Repetitive Workflows",
+      "prompt": "You are a workflow automation consultant fluent in tools like Zapier, Make, Notion, and Airtable. I am a [JOB ROLE] who spends approximately [HOURS] per week on the following repetitive tasks: [TASK 1], [TASK 2], [TASK 3]. For each task, recommend a specific automation solution using available tools (no custom coding required), describe the exact trigger > action > output logic, estimate time saved per week, and rate implementation difficulty (1–5). Then prioritize which automation to implement first based on ROI, and provide a step-by-step setup instruction for the highest-priority automation.",
+      "tags": [
+        "automation",
+        "workflow",
+        "no-code"
+      ],
+      "slug": "automate-repetitive-workflows"
+    }
+  ],
+  "education": [
+    {
+      "title": "Design Interactive Lesson Plan",
+      "prompt": "You are an expert instructional designer and master teacher. Create a 45-minute interactive lesson plan for [GRADE LEVEL/AGE GROUP] students learning about [SPECIFIC TOPIC]. The lesson must follow the 5E Model (Engage, Explore, Explain, Elaborate, Evaluate). Include a 5-minute hook that uses a surprising real-world connection, two high-engagement activities (one collaborative, one independent), three targeted checking-for-understanding questions, and a final 'exit ticket' assessment. Ensure all language and concepts are perfectly tailored to the students' developmental stage.",
+      "tags": [
+        "lesson plan",
+        "teaching",
+        "instructional design"
+      ],
+      "slug": "design-interactive-lesson-plan"
+    },
+    {
+      "title": "Create Comprehensive Grading Rubric",
+      "prompt": "Act as an experienced curriculum developer. Design a comprehensive analytical grading rubric for a [GRADE LEVEL/COURSE NAME] assignment where students must [DESCRIBE ASSIGNMENT, e.g., 'write a persuasive essay on climate change']. Create a table with 4 performance levels (Exemplary, Proficient, Developing, Beginning) across 5 specific assessment criteria (e.g., Thesis Clarity, Evidence Quality, Organization, Mechanics). Fill out the description for every cell with specific, measurable, and objective language that eliminates grading bias. Add a section at the bottom for qualitative feedback.",
+      "tags": [
+        "rubric",
+        "assessment",
+        "grading"
+      ],
+      "slug": "create-comprehensive-grading-rubric"
+    },
+    {
+      "title": "Generate Active Recall Study Guide",
+      "prompt": "You are a cognitive psychology tutor who specializes in evidence-based learning techniques. Create an active recall study guide for an upcoming exam on [SUBJECT/BOOK/EVENT]. First, provide a list of the 15 most critical core concepts. For each concept, write a 'first-order' factual question and a 'second-order' applied reasoning question. Then, generate 10 flashcard pairs (Front: Concept/Trigger, Back: Precise Definition/Explanation). Finally, describe a 1-page 'brain dump' exercise the student can use 24 hours before the test to identify knowledge gaps.",
+      "tags": [
+        "study guide",
+        "active recall",
+        "studying"
+      ],
+      "slug": "generate-active-recall-study-guide"
+    },
+    {
+      "title": "Explain Complex Concept Simply",
+      "prompt": "Act as a passionate, world-class educator known for making difficult subjects accessible (like Richard Feynman). I need to understand [COMPLEX CONCEPT/THEORY]. Explain it to me using the 'Feynman Technique'. Start with a one-sentence simple definition. Then, provide a vivid, everyday analogy that a 12-year-old would perfectly understand. Next, break down the core mechanics into 3 chronological steps. Finally, explain why this concept matters in the real world and give one common misconception people have about it. Avoid all unnecessary jargon.",
+      "tags": [
+        "explanation",
+        "feynman technique",
+        "learning"
+      ],
+      "slug": "explain-complex-concept-simply"
+    },
+    {
+      "title": "Build Course Syllabus Outline",
+      "prompt": "You are a university syllabus designer. Create a structured 12-week course outline for a class titled '[COURSE NAME]' aimed at [AUDIENCE/SKILL LEVEL]. The syllabus must include: A brief course description, 4 primary learning outcomes, prerequisites (if any), and a week-by-week breakdown. For each week, provide the module title, 2 key topics covered, 1 required reading/resource type, and 1 weekly assignment or activity. Conclude with a structure for the final capstone project that proves mastery of the course outcomes.",
+      "tags": [
+        "syllabus",
+        "curriculum",
+        "course design"
+      ],
+      "slug": "build-course-syllabus-outline"
+    },
+    {
+      "title": "Simulate Debate Opponent",
+      "prompt": "Act as an expert debater holding the opposing view on the topic: [DEBATE TOPIC]. My core argument is [MY MAIN ARGUMENT]. Provide a structured rebuttal containing your top 3 strongest counterarguments. For each counterargument, cite a logical principle, historical precedent, or common data point that supports your side. Then, identify the biggest logical fallacy or weakness in my original argument. End by asking me a challenging, highly specific question that forces me to defend the weakest part of my position.",
+      "tags": [
+        "debate",
+        "critical thinking",
+        "simulation"
+      ],
+      "slug": "simulate-debate-opponent"
+    },
+    {
+      "title": "Create Differentiated Math Problems",
+      "prompt": "You are a specialized math interventionist. I am teaching [MATH CONCEPT, e.g., 'adding fractions with unlike denominators']. Generate 3 sets of word problems (4 problems per set) based on the same concept, but differentiated by difficulty. Set 1 (Foundational) should use simple numbers and clear direct language. Set 2 (Proficient) should require a secondary intermediate step. Set 3 (Advanced/Extension) should involve real-world multi-step scenarios and algebraic thinking. Provide the answer key and the step-by-step solution logic for the hardest problem in Set 3.",
+      "tags": [
+        "math",
+        "differentiation",
+        "worksheets"
+      ],
+      "slug": "create-differentiated-math-problems"
+    },
+    {
+      "title": "Draft Parent-Teacher Communication",
+      "prompt": "Act as an empathetic and professional school principal. I need to write an email to the parents of a student named [STUDENT NAME]. The purpose of the email is to address [SPECIFIC BEHAVIOR OR ACADEMIC ISSUE] while maintaining a collaborative, positive relationship. Frame the email using the 'Feedback Sandwich' method. Start with a genuine positive observation about the student, clearly and objectively state the issue without judgment, and propose a specific partnership strategy or next step. Keep the tone warm, supportive, and strictly professional.",
+      "tags": [
+        "communication",
+        "parents",
+        "email"
+      ],
+      "slug": "draft-parent-teacher-communication"
+    },
+    {
+      "title": "Generate Language Practice Dialogue",
+      "prompt": "You are an immersive language tutor. Create a realistic, intermediate-level dialogue in [TARGET LANGUAGE] between two native speakers in the following scenario: [SCENARIO, e.g., 'disputing a hotel bill at checkout']. The dialogue should be roughly 12-15 lines long. Include common idioms, natural filler words, and culturally accurate phrasing. Below the dialogue, provide the exact English translation. Finally, extract 5 key vocabulary words or phrases used in the dialogue, provide their definitions, and give a new, separate example sentence for each.",
+      "tags": [
+        "language learning",
+        "dialogue",
+        "vocabulary"
+      ],
+      "slug": "generate-language-practice-dialogue"
+    },
+    {
+      "title": "Design Project-Based Learning Module",
+      "prompt": "Act as a Project-Based Learning (PBL) curriculum specialist. Design an engaging PBL module for [GRADE LEVEL] students focused on the subject of [SUBJECT/STANDARD]. The project hook must be a real-world 'Driving Question' that students must solve. Include: the culminating final product students will create (e.g., a podcast, a physical model, a business plan), a timeline of 4 milestone check-ins, the specific roles students will assign themselves in their groups, and an authentic audience (outside of the teacher) who could evaluate their final presentation.",
+      "tags": [
+        "pbl",
+        "project based learning",
+        "teaching"
+      ],
+      "slug": "design-project-based-learning-module"
+    }
+  ],
+  "social_media": [
+    {
+      "title": "Generate 30-Day Content Calendar",
+      "prompt": "You are an expert Social Media Manager. Create a 30-day content calendar for a [PLATFORM] account in the [INDUSTRY] space targeting [TARGET AUDIENCE]. The primary goal is [GOAL: brand awareness/lead generation/sales]. Provide a structured table with 4 columns: Day (1-30), Content Pillar (Educational, Entertaining, Promotional, Community), Post Concept (a 1-sentence description), and Call-to-Action (CTA). Ensure a 4:1:1 ratio—for every 6 posts, 4 should entertain/educate, 1 should soft-sell, and 1 should hard-sell.",
+      "tags": [
+        "content calendar",
+        "planning",
+        "strategy"
+      ],
+      "slug": "generate-30-day-content-calendar"
+    },
+    {
+      "title": "Write Viral Short-Form Video Script",
+      "prompt": "Act as a viral TikTok/Reels strategist who understands retention psychology. Write a 30-45 second video script about [TOPIC]. Structure the script with a split-screen format (Visual/Audio). Start with a 'pattern interrupt' hook in the first 3 seconds that immediately creates a curiosity gap. Use the 'Problem-Agitate-Solve' framework for the body. Include stage directions for text on-screen, B-roll transitions, and audio cues. The final 5 seconds must be a strong, organic Call-to-Action that encourages saves and shares.",
+      "tags": [
+        "tiktok",
+        "video script",
+        "reels"
+      ],
+      "slug": "write-viral-short-form-video-script"
+    },
+    {
+      "title": "Craft LinkedIn Thought Leadership Post",
+      "prompt": "You are a top-tier LinkedIn ghostwriter for B2B executives. Turn the following core idea into a high-engagement LinkedIn post: [CORE IDEA/OBSERVATION]. Start with a strong text hook that challenges a common industry belief. Format the body using short sentences, strategic line breaks for readability, and bullet points. Share a specific personal anecdote or data point to back up the claim. Conclude with a thought-provoking question to drive comments, and include 3 highly relevant industry hashtags.",
+      "tags": [
+        "linkedin",
+        "b2b",
+        "personal branding"
+      ],
+      "slug": "craft-linkedin-thought-leadership-post"
+    },
+    {
+      "title": "Brainstorm Instagram Carousel Concepts",
+      "prompt": "Act as the Creative Director of a digital marketing agency. Brainstorm 5 distinct Instagram Carousel concepts for a [BRAND TYPE] promoting [PRODUCT/SERVICE/TOPIC]. For each concept, provide: the catchy title for Slide 1, the core educational or storytelling narrative for Slides 2-8, an interactive element for Slide 9, and the save/share CTA for Slide 10. Concepts should leverage formats like 'Myth vs. Fact', 'Step-by-Step Tutorial', 'Behind the Scenes', or 'Client Case Study'.",
+      "tags": [
+        "instagram",
+        "carousel",
+        "creative"
+      ],
+      "slug": "brainstorm-instagram-carousel-concepts"
+    },
+    {
+      "title": "Respond to Negative Reviews/Comments",
+      "prompt": "You are a Community Manager known for turning brand detractors into brand advocates. Draft 3 different professional, de-escalating responses to the following negative comment/review received on [PLATFORM]: '[PASTE NEGATIVE COMMENT]'. The responses should follow three distinct approaches: 1) The Highly Empathetic & Apologetic approach, 2) The Solution-Oriented & Next Steps approach, and 3) The Offline Deflection approach (asking them to DM or email). Ensure the tone represents a premium [INDUSTRY] brand without sounding entirely robotic.",
+      "tags": [
+        "community management",
+        "crisis",
+        "engagement"
+      ],
+      "slug": "respond-to-negative-reviews-comments"
+    },
+    {
+      "title": "Optimize Bio and Profile Copy",
+      "prompt": "Act as a social media profile optimization expert. Rewrite the bio/profile copy for a [BRAND OR CREATOR] on [PLATFORM]. My current bio is: '[CURRENT BIO]'. My main goal is to drive clicks to my link: [URL DESTINATION]. Provide 3 distinct options. Option 1: SEO-optimized and keyword-heavy. Option 2: Clever, punchy, and personality-driven. Option 3: Benefit-driven (focusing strictly on what the audience gets). Each option must fit within the platform's character limits and use emojis strategically.",
+      "tags": [
+        "profile",
+        "bio",
+        "optimization"
+      ],
+      "slug": "optimize-bio-and-profile-copy"
+    },
+    {
+      "title": "Generate X/Twitter Thread",
+      "prompt": "You are a masterful Twitter/X thread writer who understands pacing and engagement. Write an 8-10 tweet thread about [TOPIC/STORY]. Tweet 1 MUST be an undeniable hook with a high-contrast statement or insane stat. Tweets 2-8 should tell the story or break down the concept using formatting tricks (lists, bolding, emojis) to maintain momentum. The penultimate tweet should summarize the key takeaway. The final tweet should contain a plug for my newsletter/product: [PLUG DETAILS].",
+      "tags": [
+        "twitter",
+        "threads",
+        "storytelling"
+      ],
+      "slug": "generate-x-twitter-thread"
+    },
+    {
+      "title": "Write Engaging Facebook Ad Copy",
+      "prompt": "Act as a direct-response copywriter whose ads consistently achieve a 3%+ CTR. Write 3 variations of Facebook Ad copy selling [PRODUCT/OFFER] to [TARGET AUDIENCE]. Variation A: Long-form storytelling (focus on the customer's pain point and transformation). Variation B: Bulleted benefits (focus on features, speed, and logical arguments). Variation C: Short-form punchy (relying heavily on the creative/image to do the work). For all three, include the primary text, headline, and link description.",
+      "tags": [
+        "facebook ads",
+        "copywriting",
+        "paid social"
+      ],
+      "slug": "write-engaging-facebook-ad-copy"
+    },
+    {
+      "title": "Design Influencer Outreach Pitch",
+      "prompt": "You are an Influencer Marketing Manager. Write a personalized outreach DM/Email to a micro-influencer in the [NICHE] space. I want to offer them [COMPENSATION/PRODUCT] in exchange for [DESIRED DELIVERABLE]. The pitch must: genuinely compliment a specific recent piece of their content, clearly state the offer without being overly demanding, include a low-friction call-to-action to gauge interest, and keep the total word count under 120 words. Provide options for both a casual Instagram DM and a more formal email.",
+      "tags": [
+        "influencer marketing",
+        "outreach",
+        "networking"
+      ],
+      "slug": "design-influencer-outreach-pitch"
+    },
+    {
+      "title": "Generate Weekly Engagement Questions",
+      "prompt": "Act as a community builder for a [INDUSTRY/NICHE] brand. Generate a list of 15 highly engaging, controversial, or thought-provoking questions to ask my audience on [PLATFORM] to drive comments and community interaction. Divide the list into 3 categories: 5 'Would you rather/This or That' questions, 5 industry-specific 'Hot Take' questions, and 5 personal story-sharing prompts. Make sure the questions are simple enough to answer in a few seconds, but interesting enough to spark debates.",
+      "tags": [
+        "engagement",
+        "community",
+        "brainstorming"
+      ],
+      "slug": "generate-weekly-engagement-questions"
+    }
+  ],
+  "seo": [
+    {
+      "title": "Generate Keyword Cluster Strategy",
+      "prompt": "You are a Senior SEO Strategist. Perform a topical keyword clustering strategy for the core topic: [CORE TOPIC]. Generate a hub-and-spoke model consisting of 1 'Pillar Page' (short-tail, high-volume keyword) and 10 'Spoke Pages' (long-tail, low-competition keywords). For each of the 10 spoke topics, provide: the exact target keyword, the estimated search intent (Informational, Navigational, Commercial, or Transactional), and a compelling SEO-optimized H1 title.",
+      "tags": [
+        "keyword research",
+        "strategy",
+        "clusters"
+      ],
+      "slug": "generate-keyword-cluster-strategy"
+    },
+    {
+      "title": "Create Comprehensive Content Brief",
+      "prompt": "Act as an SEO Content Manager. Generate a comprehensive SEO content brief for a freelance writer creating an article about: '[KEYWORD]'. The brief must include: Target Word Count, Primary Keyword, 5 Secondary/LSI Keywords, the exact H2 and H3 subheadings they must use to capture featured snippets, 3 internal linking suggestions, and a breakdown of the target audience's pain points. Also, list the top 3 questions from 'People Also Ask' that must be answered in a FAQ schema section.",
+      "tags": [
+        "content brief",
+        "writing",
+        "on-page seo"
+      ],
+      "slug": "create-comprehensive-content-brief"
+    },
+    {
+      "title": "Optimize Existing Page Content",
+      "prompt": "You are an expert in On-Page SEO optimization. I am trying to rank for the keyword '[KEYWORD]'. Analyze the following text block from my current webpage: '[PASTE TEXT]'. Rewrite this text to naturally incorporate the exact match keyword and the following LSI keywords: [LSI 1], [LSI 2], [LSI 3]. Improve the readability score, ensure sentences are punchy, and add a logical H2 header. Explain briefly how your changes improve the semantic relevance of the text.",
+      "tags": [
+        "on-page seo",
+        "content optimization",
+        "writing"
+      ],
+      "slug": "optimize-existing-page-content"
+    },
+    {
+      "title": "Write Meta Titles and Descriptions",
+      "prompt": "Act as an SEO copywriter whose meta descriptions consistently achieve high CTRs. Generate 5 variations of Meta Titles (under 60 characters) and Meta Descriptions (under 155 characters) for a webpage about: [PAGE TOPIC/PRODUCT]. The primary target keyword is '[KEYWORD]'. Ensure each variation uses active language, includes a clear CTA, incorporates a unique selling proposition (USP), and perfectly matches search intent. Highlight the variation you think will drive the highest click-through rate.",
+      "tags": [
+        "meta tags",
+        "copywriting",
+        "ctr"
+      ],
+      "slug": "write-meta-titles-and-descriptions"
+    },
+    {
+      "title": "Draft HARO/Help A Reporter Pitch",
+      "prompt": "You are a Digital PR and Link Building specialist. Write a highly effective, concise pitch responding to a journalist's query on HARO/Connectively. The journalist is writing an article about [ARTICLE TOPIC] for [PUBLICATION NAME, if known]. I am an expert in [MY FIELD/EXPERTISE]. Write an attention-grabbing subject line, a 2-sentence introduction establishing my credentials, 3 punchy, quotable bullet points answering their specific question, and a sign-off offering a headshot and further comment. Keep the total pitch under 150 words.",
+      "tags": [
+        "link building",
+        "digital pr",
+        "outreach"
+      ],
+      "slug": "draft-haro-help-a-reporter-pitch"
+    },
+    {
+      "title": "Perform Local SEO Audit Outline",
+      "prompt": "Act as a Local SEO Consultant. I manage a [BUSINESS TYPE] located in [CITY/NEIGHBORHOOD]. Provide a prioritized, step-by-step Local SEO audit checklist. Cover the following areas: Google Business Profile (name specific fields to optimize), NAP consistency (Name, Address, Phone Number), localized website content, local schema markup, and a strategy for acquiring hyper-local backlinks. Finally, provide an email template I can send to satisfied customers to request Google Reviews without sounding desperate.",
+      "tags": [
+        "local seo",
+        "audit",
+        "google business"
+      ],
+      "slug": "perform-local-seo-audit-outline"
+    },
+    {
+      "title": "Generate FAQ Schema Content",
+      "prompt": "You are a Technical SEO Content Writer. Create an FAQ section optimized for Google's FAQ Schema markup for a page targeting the keyword '[KEYWORD]'. Identify the 5 most common questions users search for regarding this keyword. Write a concise, expertly formatted answer (1-2 paragraphs max) for each question. The answers must be direct enough to steal the 'Featured Snippet' spot and should naturally include semantic keywords related to the main topic. Output the text so it is ready to be wrapped in JSON-LD.",
+      "tags": [
+        "faq",
+        "featured snippet",
+        "schema"
+      ],
+      "slug": "generate-faq-schema-content"
+    },
+    {
+      "title": "Develop Skyscraper Outreach Strategy",
+      "prompt": "Act as an SEO Outreach Expert. I have written a 5,000-word 'Skyscraper' guide about [TOPIC], which is vastly superior to the current top-ranking article by [COMPETITOR NAME]. Provide a complete strategy to build backlinks to my new guide. Identify 3 types of websites I should target for link building. Then, write a master outreach email template using the 'Skyscraper Technique' that politely points out a broken or outdated link on the target's site and suggests my guide as a replacement. The email must not sound like automated spam.",
+      "tags": [
+        "link building",
+        "skyscraper technique",
+        "outreach"
+      ],
+      "slug": "develop-skyscraper-outreach-strategy"
+    },
+    {
+      "title": "Identify Technical SEO Red Flags",
+      "prompt": "You are a Technical SEO Lead Auditor. Explain the severe impact of the following 3 technical SEO issues to a non-technical CEO: 1) [ISSUE 1, e.g., Render-blocking JavaScript], 2) [ISSUE 2, e.g., Orphan Pages], 3) [ISSUE 3, e.g., Cannibalization]. For each issue, explain what it is using a simple analogy, explain why Google penalizes it, and provide the exact step-by-step diagnostic process a developer should follow to find and fix the problem using standard tools like Google Search Console or Screaming Frog.",
+      "tags": [
+        "technical seo",
+        "audit",
+        "metrics"
+      ],
+      "slug": "identify-technical-seo-red-flags"
+    },
+    {
+      "title": "Create E-E-A-T Content Guidelines",
+      "prompt": "Act as a Google Quality Rater expert. I operate a website in the YMYL (Your Money or Your Life) niche of [NICHE]. Generate a custom author guideline checklist designed to maximize E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) signals on my blog posts. Break the guidelines into: Author Bio requirements, in-content trust signals, citation/sourcing rules, and specific disclaimers needed. Provide an example of a perfectly structured, high-E-E-A-T author bio for a writer claiming to be an expert in this space.",
+      "tags": [
+        "eeat",
+        "ymyl",
+        "content strategy"
+      ],
+      "slug": "create-e-e-a-t-content-guidelines"
+    }
+  ],
+  "design": [
+    {
+      "title": "Generate UI Color Palette System",
+      "prompt": "You are an expert UI/UX Color Theorist. Generate a complete, accessible color design system for a [BRAND TYPE, e.g., modern fintech app] targeting [TARGET AUDIENCE]. Provide HEX codes for: 1 Primary Brand Color, 1 Secondary Accent Color, 4 Semantic Colors (Success, Warning, Error, Info), and a 5-step Neutral Gray scale (from Background to High-Contrast Text). For each color, explain the psychological reasoning behind the choice. Ensure the primary brand color and text colors pass WCAG 2.1 AAA accessibility contrast ratios.",
+      "tags": [
+        "ui",
+        "color palette",
+        "design system"
+      ],
+      "slug": "generate-ui-color-palette-system"
+    },
+    {
+      "title": "Write UX Microcopy",
+      "prompt": "Act as a UX Writer specializing in human-centric design. Write the microcopy for a [SCENARIO, e.g., empty cart state / 404 error / password reset success] in a [APP TYPE/INDUSTRY] app. The brand voice is [TONE, e.g., playful and friendly / highly professional and secure]. Provide: the headline (max 5 words), the supporting body text (max 2 sentences), and the primary Call-to-Action button text (max 3 words). Then, provide a second variation using a more urgent, action-oriented tone.",
+      "tags": [
+        "ux writing",
+        "microcopy",
+        "user experience"
+      ],
+      "slug": "write-ux-microcopy"
+    },
+    {
+      "title": "Brainstorm Logo Concepts",
+      "prompt": "You are a Senior Brand Identity Designer. Brainstorm 5 unique, conceptual logo directions for [COMPANY NAME], a new startup that does [BUSINESS DESCRIPTION]. Avoid cliches like [GENERIC SYMBOL]. For each concept, describe: the primary visual icon/mark, the suggested typography style (e.g., geometric sans-serif, modern serif), the structural layout (e.g., wordmark, stacked, emblem), and the abstract feeling or metaphor the design evokes. Rank them from most conservative to most avant-garde.",
+      "tags": [
+        "branding",
+        "logo design",
+        "creative"
+      ],
+      "slug": "brainstorm-logo-concepts"
+    },
+    {
+      "title": "Audit Website for Accessibility",
+      "prompt": "Act as an Accessibility (a11y) Design Expert. I am designing a [PAGE TYPE, e.g., checkout page] for an e-commerce site. Provide a critical 10-point checklist to ensure the design passes WCAG standards and is usable for people with visual, motor, and cognitive impairments. Include specific guidelines on target touch areas, focus states for keyboard navigation, alt-text rules for UI elements, color reliance, and font legibility. Explain the 'why' behind each rule in one sentence.",
+      "tags": [
+        "accessibility",
+        "a11y",
+        "ui/ux"
+      ],
+      "slug": "audit-website-for-accessibility"
+    },
+    {
+      "title": "Create User Persona Profile",
+      "prompt": "You are a UX Researcher. Create a detailed, realistic User Persona for a [PRODUCT/APP CONCEPT]. The primary demographic is [DEMOGRAPHIC/AGE/LOCATION]. Give the persona a name and include: their technical literacy level, their main daily frustrations, their core motivations for using our product, 3 specific apps they already use heavily, and a definitive 'Jobs to be Done' (JTBD) statement in this format: 'When I [situation], I want to [motivation], so I can [expected outcome].'",
+      "tags": [
+        "ux research",
+        "personas",
+        "product design"
+      ],
+      "slug": "create-user-persona-profile"
+    },
+    {
+      "title": "Pair Typography Fonts",
+      "prompt": "Act as a Typography Expert. Suggest 3 distinct font pairing systems (Header + Body Text) for a [BRAND VIBE, e.g., luxury editorial / tech startup / playful bakery] website using Google Fonts. For each pair, name the specific fonts, explain why they complement each other (e.g., x-height, contrast, mood), and provide the recommended font weights for H1, H2, and paragraph text. Provide a sample sentence demonstrating how the pair balances hierarchy and readability.",
+      "tags": [
+        "typography",
+        "fonts",
+        "ui"
+      ],
+      "slug": "pair-typography-fonts"
+    },
+    {
+      "title": "Design Landing Page Wireframe",
+      "prompt": "You are a Conversion Rate Optimization (CRO) Designer. Outline the wireframe architecture for a high-converting landing page selling [PRODUCT/SERVICE]. Detail the structure from top to bottom (Hero Section, Social Proof, Features, etc.). For each section, specify: the core objective, the specific visual elements needed (e.g., 'Right-aligned interactive mockup'), the hierarchy of the copy, and the exact placement of the CTA buttons. Explain how the page utilizes the 'Z-pattern' or 'F-pattern' of reading.",
+      "tags": [
+        "wireframe",
+        "landing page",
+        "cro"
+      ],
+      "slug": "design-landing-page-wireframe"
+    },
+    {
+      "title": "Critique UI Design Layout",
+      "prompt": "Act as a strict but constructive Creative Director. I am presenting a UI design concept that features [DESCRIBE VAGUE DESIGN, e.g., a dark mode dashboard with heavy data density, generic icons, and low-contrast borders]. Perform a design critique. Identify 3 major fundamental design flaws based on Gestalt principles, visual hierarchy, or cognitive load. For each flaw, provide a specific, actionable rule to fix it (e.g., 'Utilize the Law of Proximity by increasing margin-bottom by 16px'). End with one encouraging positive note.",
+      "tags": [
+        "design critique",
+        "ui",
+        "feedback"
+      ],
+      "slug": "critique-ui-design-layout"
+    },
+    {
+      "title": "Plan Design System Structure",
+      "prompt": "You are a Design Systems Architect for an enterprise software team. Outline the foundational folder and component structure for a new Figma Design System intended for a [PRODUCT TYPE]. List the absolute foundational 'Design Tokens' that must be established first. Then, define the atomic hierarchy by listing 5 necessary 'Atoms', 5 'Molecules', and 3 'Organisms' that need to be built. Include a naming convention rule (e.g., utility class naming) the team must strictly follow.",
+      "tags": [
+        "design system",
+        "figma",
+        "architecture"
+      ],
+      "slug": "plan-design-system-structure"
+    },
+    {
+      "title": "Generate Creative Brief for Agency",
+      "prompt": "Act as a brand manager working with an external design agency. Draft a comprehensive creative brief for a [PROJECT TYPE, e.g., full website redesign / packaging design] for a brand called [BRAND NAME]. Include: the project summary, the target audience, the single most important message (SMIM), specific visual requirements (e.g., 'Must incorporate isometric illustrations'), mandatory deliverables, the project timeline, and a list of 3 competitor designs we want to actively avoid mimicking.",
+      "tags": [
+        "creative brief",
+        "agency",
+        "branding"
+      ],
+      "slug": "generate-creative-brief-for-agency"
+    }
+  ]
+}

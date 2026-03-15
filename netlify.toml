@@ -1,0 +1,7 @@
+# The following redirects are needed for React Router to work correctly on Netlify.
+# All requests that don't match a static file will serve index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false
